@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>>>> Joinville Business Center <<<</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link href="estilo.css" rel="stylesheet" type="text/css">
+		<script language="JavaScript">
+			var i = setInterval("tocar_filme()", 1000);
+			function tocar_filme(){
+				var flashMovie=getFlashMovieObject("lateral");
+				var intro=getFlashMovieObject("intro");
+				if (!intro.IsPlaying()) { 
+					flashMovie.Play();
+					document.all['html_lateral'].src = '1.html';
+					document.all['html_central'].src = '1_centro.html';
+					clearInterval(i);
+				}
+			}
+			function getFlashMovieObject(movieName){
+				if (window.document[movieName]){
+					return window.document[movieName];
+				}
+				if (navigator.appName.indexOf("Microsoft Internet")==-1){
+					if (document.embeds && document.embeds[movieName]) return document.embeds[movieName]; 
+				}
+				else {
+					return document.getElementById(movieName);
+				}
+			}
+		</script>
+		
+	</head>
+	<body style="padding:0; margin:0;"  bgcolor="#E3D8BC">
+		<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td valign="top">
+				<object id="intro" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="766" height="750">
+					<param name="movie" value="flash/m@in1.swf">
+					<param name="quality" value="high">
+					<param name="menu" value="false">
+					<param name="wmode" value="transparent" />
+					<embed play="false" swliveconnect="true" src="flash/m@in1.swf" quality="high" bgcolor="#ffffff" width="766" height="750" name="intro" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+				</object>
+				<div style="position:absolute; top: 250px; left: 25px; width:218px; height:451px;">
+					<object id="lateral" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="218" height="451">
+						<param name="allowScriptAccess" value="sameDomain" />
+						<param name="movie" value="flash/lateral.swf" />
+						<param name="quality" value="high" />
+						<param name="wmode" value="transparent" />
+						<param name="play" value="false" />
+						<embed play="false" swliveconnect="true" src="flash/lateral.swf" quality="high" bgcolor="#ffffff" width="218" height="451" name="lateral" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+					</object>
+				</div>
+				<div style="position:absolute; top: 250px; left: 25px;">
+					<iframe name="html_lateral" id="html_lateral" src="vazio.html" frameborder="0" allowtransparency="yes" width="200" height="451"></iframe>
+				</div>
+				<div style="position:absolute; top: 365px; left: 230px;">
+					<iframe name="html_central" id="html_central" src="vazio.html" frameborder="0" allowtransparency="yes" width="515" height="290"></iframe>
+				</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

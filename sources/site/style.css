@@ -1,0 +1,40 @@
+body {padding:0; margin:0; color:#000000}
+br{font-size:10px}
+  .s{font-family:Tahoma; font-size:11px;  color:#9A9A9A; text-decoration:none}
+  .green{font-family:Tahoma; font-size:11px;  color:#9CE438;}
+.red{font-family:Tahoma; font-size:11px;  color:#ED6300}
+.red1{font-family:Tahoma; font-size:11px;  color:#D06006}
+.o{font-family:Tahoma; font-size:11px;  color:#FAE1A1; text-decoration:none}
+.o3{font-family:Tahoma; font-size:11px;  color:#FAE1A1; }
+.o1{font-family:Tahoma; font-size:11px;  color:#CF5F06;}
+.o2{font-family:Tahoma; font-size:12px;  color:#FAE1A1}
+  .blue{font-family:Tahoma; font-size:11px;  color:#2C7F06;}
+.w{font-family:Tahoma; font-size:11px;  color:#F9EFC4; }
+.b{font-family:Tahoma; font-size:11px;  color:#312E26; }
+
+ .t1{background:url(images/1_z1.gif)  center left no-repeat; margin:0px 0px 0px 140px; padding:0px 0px 0px 10px }
+ .t2{background:url(images/1_z1.gif)  center left no-repeat; margin:0px 0px 0px 3px; padding:0px 0px 0px 10px } 
+
+  #input{
+  		width:160px; height:21px;
+		
+		}
+		 
+#input1{
+  		width:134px; height:21px;
+		
+		}
+		
+	  #textarea{
+  		width:102px; height:48px;
+		border-width:1px;
+		border-style:solid;
+		border:none;
+		background-color:#F0EAE3;
+		overflow:auto
+		}
+
+
+ 
+
+
